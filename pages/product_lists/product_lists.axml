@@ -1,0 +1,34 @@
+<!-- 搜索框 -->
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="section">
+    <input name="input" placeholder="搜索商品名称，商品编码" />
+    <view class="selected_option">
+    <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+    </view>
+
+  </view>
+</form>
+
+<view class="movie-container">
+  <!-- 导航栏 -->
+  <view class="navbar">
+    <block a:for="{{navbarTitle}}" a:key="index">
+      <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" onTap="onNavBarTap">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="movie-content-wrapper">
+    <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
+      <swiper-item a:for="{{navbarTitle}}" a:key="index">
+        <scroll-view scroll-y="{{true}}">
+          {{item}}
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

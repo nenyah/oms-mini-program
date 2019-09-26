@@ -25,8 +25,10 @@ require('../../app');
 require('../../pages/login/login');
 require('../../pages/index/index');
 require('../../pages/test/test');
+require('../../pages/cart/cart');
 require('../../pages/about/about');
-require('../../pages/about/about');
+require('../../pages/product_search/product_search');
+require('../../pages/product_lists/product_lists');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

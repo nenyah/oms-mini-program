@@ -1,0 +1,34 @@
+<!-- 搜索框 -->
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="section">
+    <input name="input" placeholder="搜索商品名称，商品编码" />
+    <view class="selected_option">
+    <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+    </view>
+
+  </view>
+</form>
+
+<!-- 种类 -->
+<view class="header">商品分类：</view>
+<view class="grid" key="grid">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+        <view class="grid-item-wrapper">
+            <text class="grid-text">{{item.title}}</text>
+        </view>
+    </view>
+</view>
+
+<!-- 品牌 -->
+<view class="header">商品品牌：</view>
+<view class="grid" key="grid">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+        <view class="grid-item-wrapper">
+            <text class="grid-text">{{item.title}}</text>
+        </view>
+    </view>
+</view>

@@ -1,4 +1,38 @@
-<view>
-  {{msg}}
+<!-- 搜索框 -->
+<view class="search" onTap="handletap">
+    <input name="input" placeholder="搜索商品名称，商品编码"/>
 </view>
-<view a:for={{arr}}>{{item}} {{index}}</view>
+
+<!-- 轮播图 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block a:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 种类 -->
+<view class="grid" key="grid">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+        <view class="grid-item-wrapper">
+            <image src="{{item.icon}}" class="grid-icon" mode="aspectFit" />
+            <text class="grid-text">{{item.title}}</text>
+        </view>
+    </view>
+</view>
+
+<!-- 品牌 -->
+<view class="grid" key="grid">
+    <view a:for="{{brands}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+        <view class="grid-item-wrapper">
+            <text class="grid-text">{{item.title}}</text>
+        </view>
+    </view>
+</view>

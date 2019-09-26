@@ -1,0 +1,49 @@
+/* 搜索框 */
+.section {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  margin: 2px;
+}
+.section input {
+  display: flex;
+  width: 550rpx;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* 下拉选择 */
+.selected_option {
+  display: flex;
+  margin-left: 10rpx;
+  width: 150rpx;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 2px;
+}
+
+/* 分类 */
+.header {
+  font-weight: bold;
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30%;
+}
+
+.grid-item {
+    text-align: center;
+    padding-top: 2%;
+    margin-left: 4%; 
+    margin-bottom: 4%;
+    position: relative;
+    box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.1);
+    border-radius: 10rpx;
+    background-color: white;
+}

@@ -1,3 +1,5 @@
-<view>
-  New Page
+<view class="main">
+    <view class="item item1">1</view>
+    <view class="item item2">2</view>
+    <view class="item item3">3</view>
 </view>

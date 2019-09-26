@@ -3,8 +3,10 @@
     "pages/login/login",
     "pages/index/index",
     "pages/test/test",
+    "pages/cart/cart",
     "pages/about/about",
-    "pages/about/about"
+    "pages/product_search/product_search",
+    "pages/product_lists/product_lists"
   ],
   "window": {
     "defaultTitle": "华东宁波订单系统"

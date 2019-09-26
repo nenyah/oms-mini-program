@@ -1,0 +1,60 @@
+/* 搜索框 */
+.section {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  margin: 2px;
+}
+.section input {
+  display: flex;
+  width: 550rpx;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* 下拉选择 */
+.selected_option {
+  display: flex;
+  margin-left: 10rpx;
+  width: 150rpx;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 2px;
+}
+
+/* 导航栏 */
+.movie-container{
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  text-align: center;
+  color: #A8A8A8;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #DFDFDF;
+}
+.navbar-item{
+  flex: 1;
+  padding: 26rpx 0px;
+}
+.navbar-item-active{
+  transition: all 0.3s;
+  border-bottom: 10rpx solid #494949;
+  color: #494949;
+}
+
+.movie-content-wrapper{
+  padding-top: 50px;
+}

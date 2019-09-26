@@ -1,0 +1,27 @@
+.main {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+.item {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.item1 {
+  display: flex;
+  background-color: red;
+}
+
+.item2 {
+  display: flex;
+  background-color: dodgerblue;
+}
+
+.item3 {
+  display: flex;
+  background-color: greenyellow;
+}

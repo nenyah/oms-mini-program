@@ -1,7 +1,30 @@
 Page({
   data: {
-    msg:'this is a page test',
-    arr:[1,2,3,4,5]
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 500,
+    imgUrls: [ 
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg', 
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg', 
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' 
+    ],
+    cates:[
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/image/category.png'}
+    ],
+    brands:[
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+    ]
   },
   onLoad(query) {
     // 页面加载
@@ -35,5 +58,9 @@ Page({
       desc: 'My App description',
       path: 'pages/index/index',
     };
+  },
+  handletap(event) {
+    console.log(event);
+    dd.navigateTo({url:'/pages/product_search/product_search'})
   },
 });
