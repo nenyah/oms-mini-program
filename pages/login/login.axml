@@ -1,0 +1,13 @@
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="head_deco"></view>
+  <view class="login_logo"><image mode="scaleToFill" src=""/></view>
+  
+  <view class="section">
+    <input name="workcode" placeholder="工号" />
+    <input name="password" placeholder="密码" password="true"/>
+  </view>
+  
+  <view class="btn-area">
+    <button formType="submit">登录</button>
+  </view>
+</form>
