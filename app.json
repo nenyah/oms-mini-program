@@ -2,10 +2,36 @@
   "pages": [
     "pages/login/login",
     "pages/index/index",
-    "pages/test/test"
-    
+    "pages/test/test",
+    "pages/about/about",
+    "pages/about/about"
   ],
   "window": {
     "defaultTitle": "华东宁波订单系统"
+  },
+  "tabBar": {
+    "textColor": "#101010",
+    "selectedColor": "#3FA0FF",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "image/home.png",
+        "activeIcon": "image/home_HL.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "name": "购物车",
+        "icon": "image/cart.png",
+        "activeIcon": "image/cart_HL.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "name": "我",
+        "icon": "image/me.png",
+        "activeIcon": "image/me_HL.png"
+      }
+    ]
   }
 }

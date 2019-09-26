@@ -25,6 +25,8 @@ require('../../app');
 require('../../pages/login/login');
 require('../../pages/index/index');
 require('../../pages/test/test');
+require('../../pages/about/about');
+require('../../pages/about/about');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }
