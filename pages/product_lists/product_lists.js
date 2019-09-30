@@ -1,3 +1,11 @@
+/*
+ * @Description: product_list.js
+ * @Author: Steven
+ * @Date: 2019-09-30 10:17:41
+ * @LastEditors: Steven
+ * @LastEditTime: 2019-09-30 12:49:32
+ */
+
 Page({
   data: {
     scrollH: 0,
@@ -6,7 +14,7 @@ Page({
     images: [],
     col1: [],
     col2: [],
-    array: ['商品名称','商品编码'], 
+    array: ['商品名称', '商品编码'],
     index: 0,
     navbarActiveIndex: 0,
     navbarTitle: [
@@ -15,7 +23,7 @@ Page({
       '依婉',
       '幸福缪斯'
     ],
-   
+
   },
 
   onLoad: function () {
@@ -94,7 +102,7 @@ Page({
         newprice: "86",
         oldprice: "88",
         discount: "8.8",
-        height: 0, 
+        height: 0,
       },
       {
         goodId: 1,
@@ -114,7 +122,7 @@ Page({
         newprice: "86.00",
         oldprice: "88.00",
         discount: "8.8",
-        height: 0, 
+        height: 0,
       },
       {
         goodId: 3,
@@ -158,14 +166,14 @@ Page({
     let navbarTapIndex = event.currentTarget.dataset.navbarIndex
     // 设置data属性中的navbarActiveIndex为当前点击的navbar
     this.setData({
-      navbarActiveIndex: navbarTapIndex      
+      navbarActiveIndex: navbarTapIndex
     })
   },
 
   /**
    * 
    */
-  onBindAnimationFinish: function ({detail}) {
+  onBindAnimationFinish: function ({ detail }) {
     // 设置data属性中的navbarActiveIndex为当前点击的navbar
     this.setData({
       navbarActiveIndex: detail.current

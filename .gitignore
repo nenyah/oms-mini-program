@@ -1,1 +1,3 @@
-.tea\*
+/.tea
+/.vscode
+*.less
