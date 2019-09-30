@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/index/index",
-    "pages/test/test",
-    "pages/cart/cart",
-    "pages/about/about",
+    "pages/product_detail/product_detail",
+    "pages/product_lists/product_lists",
     "pages/product_search/product_search",
-    "pages/product_lists/product_lists"
+    "pages/about/about",
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/test/test"
+
   ],
   "window": {
     "defaultTitle": "华东宁波订单系统"

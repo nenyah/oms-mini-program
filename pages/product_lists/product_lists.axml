@@ -3,7 +3,7 @@
   <view class="section">
     <input name="input" placeholder="搜索商品名称，商品编码" />
     <view class="selected_option">
-    <texticker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
       <view class="picker">
         {{array[index]}}
       </view>

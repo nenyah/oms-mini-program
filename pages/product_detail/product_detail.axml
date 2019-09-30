@@ -1,0 +1,14 @@
+
+<view class="body">
+  <view class="top">
+    <input name="input" placeholder="搜索商品名称，商品编码" style="width:80%;"/>
+    <image mode="aspectFit" src="/image/cart.png" style="width:15px;height:15px;padding:2%;margin:0 auto;"/>
+  </view>
+  <view class="product_detail">
+  <view class="main_pic"></view>
+  <view class="product_info"></view>
+  <view class="product_description"></view>
+  </view>
+
+  <view class="add_cart"></view>
+</view>
