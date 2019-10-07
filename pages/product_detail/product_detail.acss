@@ -22,7 +22,13 @@
   height: 1200rpx;
 }
 
-
+.main_pic {
+  margin: 60rpx 0;
+}
+.main_pic image {
+  width:750rpx;
+  height:650rpx;
+}
 /* 底部购物车 */
 .add_cart {
   background: yellow;

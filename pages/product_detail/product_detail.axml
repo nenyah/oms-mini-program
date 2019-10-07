@@ -5,9 +5,11 @@
     <image mode="aspectFit" src="/image/cart.png" style="width:15px;height:15px;padding:2%;margin:0 auto;"/>
   </view>
   <view class="product_detail">
-  <view class="main_pic"></view>
-  <view class="product_info"></view>
-  <view class="product_description"></view>
+    <view class="main_pic">
+      <image src="/image/product1.jpg" mode="scaleToFill" />
+    </view>
+    <view class="product_info"></view>
+    <view class="product_description"></view>
   </view>
 
   <view class="add_cart"></view>
