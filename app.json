@@ -21,20 +21,20 @@
       {
         "pagePath": "pages/index/index",
         "name": "首页",
-        "icon": "image/home.png",
-        "activeIcon": "image/home_HL.png"
+        "icon": "images/home.png",
+        "activeIcon": "images/home_HL.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "name": "购物车",
-        "icon": "image/cart.png",
-        "activeIcon": "image/cart_HL.png"
+        "icon": "images/cart.png",
+        "activeIcon": "images/cart_HL.png"
       },
       {
         "pagePath": "pages/about/about",
         "name": "我",
-        "icon": "image/me.png",
-        "activeIcon": "image/me_HL.png"
+        "icon": "images/me.png",
+        "activeIcon": "images/me_HL.png"
       }
     ]
   }

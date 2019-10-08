@@ -5,7 +5,7 @@
 }
 /* 顶部搜索栏 */
 .top {
-  background: red;
+  background: white;
   width: 100%;
   height: 50rpx;
   position: fixed;
@@ -13,39 +13,23 @@
   display: flex;
   flex-direction: row;
 }
-/* 产品详情页 */
-.product_detail {
-  background: green;
+.carts-icon {
+  position: absolute;
+  right: 40rpx;
+  width: 75rpx;
+  height: 75rpx;
+}
+.carts-icon image {
   width: 100%;
-  height: 1200rpx;
-}
-/* 底部购物车 */
-.add_cart {
-  background: yellow;
-  width: 100%;
-  height: 100rpx;
-  position: fixed;
-  bottom: 0;
-}
-/* 产品主图 */
-.main_pic {
-  background: yellow;
-  width: 100%;
-  height: 200rpx;
-}
-.main_pic image {
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-}
-page {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
+.carts-icon.on {
+  -webkit-animation: to_cart_scale .3s ease;
+  animation: to_cart_scale .3s ease;
+}
+/* 产品主图 */
 /* 直接设置swiper属性 */
 swiper {
-  /* height : 500rpx; */
   height: 600rpx;
   background: #F3F4F6;
   text-align: center;
@@ -53,4 +37,131 @@ swiper {
 swiper-item image {
   width: 80%;
   height: 100%;
+}
+/* 产品详情页 */
+.product_detail {
+  background: white;
+  width: 100%;
+  height: 1200rpx;
+  margin: 60rpx 0;
+}
+.p_title {
+  font-weight: 600;
+  margin: 20rpx;
+  font-size: 28rpx;
+}
+.p_price {
+  color: red;
+  margin: 20rpx;
+  font-size: 52rpx;
+}
+.p_extra {
+  display: flex;
+  border-top: 2rpx solid #BBBBBB;
+  border-bottom: 2rpx solid #BBBBBB;
+  color: #BBBBBB;
+  padding: 20rpx;
+}
+.p_extra .item {
+  flex: 1;
+  text-align: center;
+}
+/* 底部购物车 */
+.add_cart {
+  background: white;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+
+.popup{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup .content{
+  height: 48vh;
+  background: #fff;
+}
+
+.popup .btn{
+  height: 8vh;
+  background: #ff5f19;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 8vh;
+}
+.popup .text{
+  flex: 1 1 auto;
+  padding: 10px 0 0 8px;
+}
+.popup .text view{
+  font-size: 17px;
+  color: #ff5f19;
+}
+
+.popup .title{
+  margin-top: 30vh;
+  height: 14vh;
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  padding:0 10px;
+  background: #fff;
+}
+
+.popup .title .img{
+  flex: 0 1 auto;
+  width: 84px;
+  height: 84px;
+  margin-top:-15px;
+}
+.popup .title .img image{
+  height: 84px;
+  width: 84px;
+}
+
+.popup .title .icon{
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  padding-top: 10px;
+}
+.popup .title .icon image{
+  width: 22px;
+  height: 22px;
+}
+.popup .content .item {
+  padding: 0 15px;
+}
+.popup .content .item text{
+  font-size: 14px;
+  color: #333333;
+}
+.popup .content .item .list{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 10px;
+}
+.popup .content .item .list view{
+  flex: 0 1 auto;
+  font-size: 12px;
+  color: #333333;
+  line-height: 28px;
+  padding: 0 15px;
+  border: 1px solid #979797;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.active{
+  border-color: #ff5f19 !important;
+  color: #ff5f19 !important;
 }

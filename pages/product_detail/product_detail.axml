@@ -5,11 +5,12 @@
       placeholder="搜索商品名称，商品编码"
       style="width:80%;"
     />
-    <image
-      mode="aspectFit"
-      src="/image/cart.png"
-      style="width:15px;height:15px;padding:2%;margin:0 auto;"
-    />
+    <navigator open-type="switchTab" url="../cart/cart">
+      <view class="carts-icon {{scaleCart?'on':''}}">
+          <image mode="aspectFit" src="/images/cart.png" style="width:30rpx;height:30rpx;padding:2%;margin:0 auto;"/>
+          <text class="carts-icon-num" a:if="{{hasCarts}}">{{totalNum}}</text>
+      </view>
+    </navigator>
   </view>
   <view class="product_detail">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -20,10 +21,67 @@
       </block>
     </swiper>
     <view class="product_info">
-
+      <view class="p_title">人血白蛋白</view>
+      <view class="p_price">￥328</view>
+      <view class="p_extra">
+        <text class="freight item">运费：免运费</text>
+        <text class="stock item">剩余:183</text>
+        <text class="order item">销量：999</text>
+      </view>
     </view>
-    <view class="product_description"></view>
+    <view class="product_description">
+      【通用名称】人血白蛋白 \n
+【主要成分】人血白蛋白 \n
+【生产厂家】奥克特砝码、成都蓉生、华兰生物……\n
+【药品规格】5g、10g、12.5g\n
+【适应症状】\n
+   1.失血创伤、烧伤引起的休克 \n
+   2.脑水肿及损伤引起的颅压升高 3.肝硬化及肾病引起的\n
+      水肿或腹水 \n
+   4.低蛋白血症的防治 \n
+   5.新生儿高胆红素血症 \n
+   6.用于心肺分流术、烧伤的辅助治疗、血液透析的辅助\n
+      治疗和成人呼吸窘迫综合征\n
+    </view>
   </view>
 
-  <view class="add_cart"></view>
+  <view class="add_cart">
+    <button type="primary" 
+            size="defaultSize" 
+            onTap="specFun">
+            加入购物车 
+    </button>
+  </view>
+  <view class='popup' a:if="{{specIs}}">
+    <view class='title'>
+      <view class='img'>
+        <image src='/images/product_detail1.jpg'></image>
+      </view>
+      <view class='text'>
+        <text>热卖款：人血白蛋白...</text>
+        <view>￥360.00</view>
+      </view>
+      <view class='icon' onTap='specFun'>
+        <image src="/images/delete.png"></image>
+      </view>
+    </view>
+  <scroll-view scroll-y class='content'>
+      <view class='item'>
+        <text style='padding-top:10px;'>规格:</text>
+        <view class='list'>
+          <view class='active'>5g</view>
+          <view>10g</view>
+          <view>12.5g</view>
+        </view>
+      </view>
+      <view class='item'>
+        <text>包装:</text>
+        <view class='list'>
+          <view>无</view>
+        </view>
+      </view>
+  </scroll-view>
+  <view class='btn' onTap='addCart'>
+  下一步
+  </view>
 </view>

@@ -5,25 +5,25 @@ Page({
     interval: 3000,
     duration: 500,
     imgUrls: [ 
-      '/image/banner1.jpg', 
-      '/image/banner2.jpg', 
-      '/image/banner3.jpg' 
+      '/images/banner1.jpg', 
+      '/images/banner2.jpg', 
+      '/images/banner3.jpg' 
     ],
     cates:[
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/image/category.png'}
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
+      {title:'种类1', entitle: '种类1', icon:'/images/category.png'}
     ],
     brands:[
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
-      {title:'品牌1', entitle: '品牌1', icon:'/image/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
+      {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
     ]
   },
   onLoad(query) {
