@@ -3,7 +3,7 @@
  * @Author: Steven
  * @Date: 2019-09-30 10:51:57
  * @LastEditors: Steven
- * @LastEditTime: 2019-10-08 12:09:34
+ * @LastEditTime: 2019-10-08 13:25:49
  */
 
 Page({
@@ -34,15 +34,15 @@ Page({
       specIs: !this.data.specIs
     })
   },
-  addCart(){
+  addCart() {
     this.specFun()
     dd.showToast({
       type: 'success',
       content: '加入购物车成功',
-      duration: 3000,
+      duration: 1000,
       success: () => {
 
       },
     })
-},
+  },
 });
