@@ -1,0 +1,28 @@
+<!-- 搜索框 -->
+<form
+  onSubmit="formSubmit"
+  onReset="formReset"
+>
+  <view class="section">
+    <view class="right">
+      <input
+        name="input"
+        placeholder="请输入客户名称"
+      />
+    </view>
+
+    <view class="left">
+      <text>搜索</text>
+    </view>
+
+
+  </view>
+</form>
+<block
+  a:for="{{clients}}"
+  key={{index}}
+>
+  <view class="item">
+    {{item.name}}
+  </view>
+</block>

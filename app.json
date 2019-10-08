@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/clients/clients",
     "pages/order_details/order_details",
     "pages/product_detail/product_detail",
     "pages/product_lists/product_lists",
@@ -9,7 +10,6 @@
     "pages/index/index",
     "pages/login/login",
     "pages/test/test"
-
   ],
   "window": {
     "defaultTitle": "华东宁波订单系统"
