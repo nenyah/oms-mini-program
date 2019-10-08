@@ -1,6 +1,6 @@
 <form onSubmit="formSubmit" onReset="formReset">
   <view class="head_deco"></view>
-  <view class="login_logo"><image mode="scaleToFill" src=""/></view>
+  <view class="login_logo"><image mode="scaleToFill" src="/image/logo.png"/></view>
   
   <view class="section">
     <input name="workcode" placeholder="工号" />

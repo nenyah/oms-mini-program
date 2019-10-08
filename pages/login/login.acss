@@ -1,27 +1,26 @@
 form {
   display: block;
-  border: 1px solid #eee;
+  border: 2rpx solid #eee;
   width: 80%;
   margin: 20% 10%;
 }
 
 .head_deco {
-  height: 2px;
+  height: 8rpx;
   width: 100%;
   background-color: #3FA0FF;
 }
 
 .login_logo {
-  width: 95px;
-  height: 95px;
+  width: 190rpx;
+  height: 95rx;
   margin: 10% auto;
 }
 
 
 .login_logo image {
-  background-color: #eeeeee; 
-  width: 95px;
-  height: 95px; 
+  width: 190rpx;
+  height: 190rpx; 
   border-radius:50%;
 }
 .section {
@@ -30,7 +29,7 @@ form {
 }
 
 .section input {
-  border: 1px solid #eee;
+  border: 2rpx solid #eee;
   margin: 2% 0;
 }
 
@@ -39,5 +38,5 @@ form {
   margin: 5% 10%;
   background-color: #3FA0FF;
   color: white;
-  border-radius: 5px;
+  border-radius: 10rpx;
 }
