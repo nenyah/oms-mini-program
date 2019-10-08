@@ -3,7 +3,7 @@
  * @Author: Steven
  * @Date: 2019-10-08 15:05:08
  * @LastEditors: Steven
- * @LastEditTime: 2019-10-08 15:25:34
+ * @LastEditTime: 2019-10-08 17:04:13
  */
 const formatTime = date => {
   const year = date.getFullYear()
