@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/order_details/order_details",
     "pages/product_detail/product_detail",
     "pages/product_lists/product_lists",
     "pages/product_search/product_search",
