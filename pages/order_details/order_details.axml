@@ -54,9 +54,12 @@
         商业客户
       </view>
       <text>{{client}}</text>
-      <view class='right'>
+      <navigator
+        url="/pages/clients/clients"
+        class='right'
+      >
         <image src='/images/my_order.png'></image>
-      </view>
+      </navigator>
     </view>
 
     <view
