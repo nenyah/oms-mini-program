@@ -1,0 +1,39 @@
+.section {
+    width:100vw;
+    border: 2rpx solid #bbbbbb;
+    margin: 2vh 0;
+}
+
+.title {
+    display      : flex;
+    line-height  : 40px;
+    border-bottom: 1px solid #dedede;
+    background   : #fff;
+    padding      : 0 16px;
+    align-items    : center;
+}
+
+.title .left {
+    flex     : 1 0 30%;
+    font-size: 14px;
+    color    : #333333;
+}
+
+.title .right {
+    flex           : 1 0 10%;
+    display        : flex;
+    justify-content: flex-end;
+    align-items    : center;
+}
+
+.right image {
+    width:15vw;
+    height:15vh;
+    border-radius:50% 50%;
+}
+
+.arrow image{
+    width:5vw;
+    height:5vh;
+    /* border-radius:50% 50%; */
+}

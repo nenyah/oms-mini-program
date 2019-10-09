@@ -1,3 +1,96 @@
-<view>
-  New Page
+<view
+  class="main"
+  style="height:100vh;"
+>
+  <view class="section">
+    <!-- 头像 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        头像
+      </view>
+      <view class='right'>
+        <image src='/images/avatar.jpg'></image>
+      </view>
+    </view>
+    <!-- 业务代表名称 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        业务代表名称
+      </view>
+      <view class='right'>
+        <text>{{person.name}}</text>
+      </view>
+    </view>
+    <!-- 工号 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        工号
+      </view>
+      <view class='right'>
+        <text>{{person.workcode}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <!-- 收货地址 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        收货地址
+      </view>
+      <navigator
+        url="/pages/adress/adress"
+        class='right arrow'
+      >
+        <image src='/images/my_order.png'></image>
+      </navigator>
+    </view>
+    <!-- 我的客户 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        我的客户
+      </view>
+      <navigator
+        url="/pages/clients/clients"
+        class='right arrow'
+      >
+        <image src='/images/my_order.png'></image>
+      </navigator>
+    </view>
+    <!-- 我的订单 -->
+    <view
+      class='title'
+      style='border-top:1px solid #dedede;'
+      onTap="choose_order_cate"
+    >
+      <view class='left'>
+        我的订单
+      </view>
+      <navigator
+        url="/pages/order_list/order_list"
+        class='right arrow'
+      >
+        <image src='/images/my_order.png'></image>
+      </navigator>
+    </view>
+  </view>
 </view>

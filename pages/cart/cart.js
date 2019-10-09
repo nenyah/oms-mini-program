@@ -3,7 +3,7 @@
  * @Author: Steven
  * @Date: 2019-09-26 10:10:23
  * @LastEditors: Steven
- * @LastEditTime: 2019-10-08 13:02:05
+ * @LastEditTime: 2019-10-09 16:09:42
  */
 const app = getApp()
 Page({
@@ -176,6 +176,9 @@ Page({
       } else {
         listTotal.push(v)
       }
+    })
+    dd.navigateTo({
+      url: '/pages/generate_order/generate_order'
     })
     // app.http('v1/order/set', { goods: list }, "POST").then(res => {
     //   if (res.code == 200) {

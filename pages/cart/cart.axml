@@ -1,20 +1,62 @@
 <scroll-view style='height:100vh'>
-  <view class='top' style='height:8vh'>
-   <view class='label' onTap='totalFun'>
-    <image a:if="{{total}}" src='/images/choice_y.png'></image>
-    <image a:else src='/images/choice_n.png'></image>
-   </view>
-   <text class='city'>深圳</text>
-   <text a:if="{{!isEdit}}" class='edit-btn' onTap='editFun'>编辑</text>
-   <text a:else class='edit-btn' onTap='editFun'>完成</text>
+  <view
+    class='top'
+    style='height:8vh'
+  >
+    <view
+      class='label'
+      onTap='totalFun'
+    >
+      <image
+        a:if="{{total}}"
+        src='/images/choice_y.png'
+      ></image>
+      <image
+        a:else
+        src='/images/choice_n.png'
+      ></image>
+    </view>
+    <text class='city'>深圳</text>
+    <text
+      a:if="{{!isEdit}}"
+      class='edit-btn'
+      onTap='editFun'
+    >编辑</text>
+    <text
+      a:else
+      class='edit-btn'
+      onTap='editFun'
+    >完成</text>
   </view>
-  <scroll-view scroll-y class='list' style='height:82vh'>
-    <view class='item' a:if="{{!isEdit}}" a:for="{{list}}">
-      <view class='label' onTap="labelFun" data-id="{{item.id}}">
-        <image a:if="{{item.select}}" src='/images/choice_y.png'></image>
-        <image a:else src='/images/choice_n.png'></image>
+  <scroll-view
+    scroll-y
+    class='list'
+    style='height:82vh'
+  >
+    <view
+      class='item'
+      a:if="{{!isEdit}}"
+      a:for="{{list}}"
+    >
+      <view
+        class='label'
+        onTap="labelFun"
+        data-id="{{item.id}}"
+      >
+        <image
+          a:if="{{item.select}}"
+          src='/images/choice_y.png'
+        ></image>
+        <image
+          a:else
+          src='/images/choice_n.png'
+        ></image>
       </view>
-      <navigator class='content' hover-class="none" url="/pages/product_details/product_details?id={{item.id}}">
+      <navigator
+        class='content'
+        hover-class="none"
+        url="/pages/product_details/product_details?id={{item.id}}"
+      >
         <image src='{{item.img}}'></image>
         <view class='text'>
           <view class='title'>{{item.title}}</view>
@@ -26,18 +68,42 @@
         </view>
       </navigator>
     </view>
-    <view class='item edit' a:if="{{isEdit}}"  a:for="{{list}}">
-      <view class='label' onTap="labelFun" data-id="{{item.id}}">
-        <image a:if="{{item.select}}" src='/images/choice_y.png'></image>
-        <image a:else src='/images/choice_n.png'></image>
+    <view
+      class='item edit'
+      a:if="{{isEdit}}"
+      a:for="{{list}}"
+    >
+      <view
+        class='label'
+        onTap="labelFun"
+        data-id="{{item.id}}"
+      >
+        <image
+          a:if="{{item.select}}"
+          src='/images/choice_y.png'
+        ></image>
+        <image
+          a:else
+          src='/images/choice_n.png'
+        ></image>
       </view>
       <view class='content'>
         <image src='{{item.img}}'></image>
         <view class='text'>
           <view class='title'>
-            <text class='{{item.num==1?"prohibit":""}}' onTap='reduceFun' data-item="{{item}}" >-</text>
-            <input type="number" value='{{item.num}}'></input>
-            <text onTap='plusFun' data-item="{{item}}">+</text>
+            <text
+              class='{{item.num==1?"prohibit":""}}'
+              onTap='reduceFun'
+              data-item="{{item}}"
+            >-</text>
+            <input
+              type="number"
+              value='{{item.num}}'
+            ></input>
+            <text
+              onTap='plusFun'
+              data-item="{{item}}"
+            >+</text>
           </view>
           <view class='spec'>{{item.spec}}</view>
           <view class='price'>
@@ -45,29 +111,57 @@
           </view>
         </view>
       </view>
-      <view class='del-btn' onTap='delItemFun' data-item="{{item}}">
+      <view
+        class='del-btn'
+        onTap='delItemFun'
+        data-item="{{item}}"
+      >
         删除
       </view>
     </view>
   </scroll-view>
-  <view class='bottom' style='height:10vh'>
+  <view
+    class='bottom'
+    style='height:10vh'
+  >
     <view class='left'>
       <view class='text'>
-        <view class='label' style='padding-left:16px;' onTap='totalFun'>
-          <image a:if="{{total}}" src='/images/choice_y.png'></image>
-          <image a:else src='/images/choice_n.png'></image>
+        <view
+          class='label'
+          style='padding-left:16px;'
+          onTap='totalFun'
+        >
+          <image
+            a:if="{{total}}"
+            src='/images/choice_y.png'
+          ></image>
+          <image
+            a:else
+            src='/images/choice_n.png'
+          ></image>
         </view>
         <text style='padding-left:10px;'>全选</text>
       </view>
-      <view class='total-price' a:if="{{!isEdit}}">
+      <view
+        class='total-price'
+        a:if="{{!isEdit}}"
+      >
         合计:<text style='color:#ff5f19;margin-right:10px;'>￥{{totalPrice}}</text>
         <view style='font-size: 10px;margin-right:10px;'>不含运费</view>
       </view>
     </view>
-    <view class='{{totalPrice>0.1?"right":"right prohibit"}}' onTap="closeFun"  a:if="{{!isEdit}}">
-      结算
+    <view
+      class='{{totalPrice>0.1?"right":"right prohibit"}}'
+      onTap="closeFun"
+      a:if="{{!isEdit}}"
+    >
+      下单
     </view>
-    <view  class='{{totalPrice>0.1?"right":"right prohibit"}}' onTap="delFun" a:if="{{isEdit}}">
+    <view
+      class='{{totalPrice>0.1?"right":"right prohibit"}}'
+      onTap="delFun"
+      a:if="{{isEdit}}"
+    >
       删除
     </view>
   </view>
