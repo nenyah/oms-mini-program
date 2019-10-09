@@ -1,14 +1,14 @@
 /* 搜索框 */
 .search {
-  width: 90%;
+  width: 100%;
+  padding: 1vh 10vw;
 }
 
 input {
-  width: 100%;
-  margin: 10px auto;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  font-size: 12px;
+  width: 80vw;
+  border: 2rpx solid #eee;
+  border-radius: 8rpx;
+  font-size: 24rpx;
   text-align: center;
 }
 

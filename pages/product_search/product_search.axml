@@ -5,7 +5,7 @@
     <view class="selected_option">
     <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
       <view class="picker">
-        {{array[index]}}
+        <text>{{array[index]}}</text>
       </view>
     </picker>
     </view>
