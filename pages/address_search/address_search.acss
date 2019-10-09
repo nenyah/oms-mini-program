@@ -1,0 +1,26 @@
+.section {
+    display:flex;
+}
+
+.right {
+    margin-left:10rpx;
+    width:80vw;
+}
+
+input {
+   width:100%;
+}
+
+.left {
+    width:20vw;
+    padding: 5rpx;
+    font-size:20px;
+    text-align:center;
+}
+
+.item {
+    margin: 15rpx;
+    font-size: 50rpx;
+    border-bottom: 2rpx solid #bbbbbb;
+    padding-bottom:15rpx;
+}

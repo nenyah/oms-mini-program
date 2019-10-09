@@ -177,17 +177,17 @@ Page({
         listTotal.push(v)
       }
     })
-    app.http('v1/order/set', { goods: list }, "POST").then(res => {
-      if (res.code == 200) {
-        app.http('v1/order/editCart', { list: listTotal }, "POST")
-          .then(res => {
-            console.log(res)
-          })
-        wx.navigateTo({
-          url: "/pages/orderDetails/index?id=" + res.data._id
-        });
-      }
-    })
+    // app.http('v1/order/set', { goods: list }, "POST").then(res => {
+    //   if (res.code == 200) {
+    //     app.http('v1/order/editCart', { list: listTotal }, "POST")
+    //       .then(res => {
+    //         console.log(res)
+    //       })
+    //     wx.navigateTo({
+    //       url: "/pages/orderDetails/index?id=" + res.data._id
+    //     });
+    //   }
+    // })
 
   },
   onLoad() { },
