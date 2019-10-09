@@ -163,7 +163,7 @@
     </view>
     <navigator
       hover-class="none"
-      url="/pages/addressList/index?type=1"
+      url="/pages/address_search/address_search"
       class='address'
     >
       <view class='left'>

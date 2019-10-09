@@ -2,7 +2,7 @@
   "pages": [
     "pages/address_search/address_search",
     "pages/clients/clients",
-    "pages/order_details/order_details",
+    "pages/generate_order/generate_order",
     "pages/product_detail/product_detail",
     "pages/product_lists/product_lists",
     "pages/product_search/product_search",
@@ -10,7 +10,9 @@
     "pages/cart/cart",
     "pages/index/index",
     "pages/login/login",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/order_detail/order_detail",
+    "pages/order_search/order_search"
   ],
   "window": {
     "defaultTitle": "华东宁波订单系统"
