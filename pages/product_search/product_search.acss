@@ -5,6 +5,7 @@
   width: 100vw;
   margin: 4rpx 0;
 }
+
 .section input {
   width: 75vw;
   border: 4rpx solid #eee;
