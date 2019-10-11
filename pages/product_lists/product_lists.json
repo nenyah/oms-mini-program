@@ -1,7 +1,8 @@
 {
-   "optionMenu": {
+  "optionMenu": {
     "icon": "/image/search.png"
   },
   "titlePenetrate": "YES",
-  "barButtonTheme": "light"
+  "barButtonTheme": "light",
+  "defaultTitle": "产品列表"
 }
