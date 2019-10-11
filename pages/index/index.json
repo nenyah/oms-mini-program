@@ -1,3 +1,6 @@
 {
-   "defaultTitle": "首页"
+   "defaultTitle": "首页",
+   "usingComponents":{
+    "s-swiper":"/components/s-swiper/s-swiper"
+  }
 }

@@ -4,7 +4,7 @@
 </view>
 
 <!-- 轮播图 -->
-<swiper
+<!-- <swiper
   indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}"
   interval="{{interval}}"
@@ -15,7 +15,8 @@
       <image src="{{item}}" class="slide-image"/>
     </swiper-item>
   </block>
-</swiper>
+</swiper> -->
+<s-swiper imgUrls="{{imgUrls}}"/>
 
 
 <!-- 种类 -->

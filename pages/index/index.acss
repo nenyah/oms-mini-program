@@ -14,12 +14,6 @@ input {
 
 
 
-
-/* 轮播图 */
-.slide-image {
-  width: 100%;
-}
-
 /* 分类 */
 .grid {
     display: flex;
