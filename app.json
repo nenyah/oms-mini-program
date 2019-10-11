@@ -15,6 +15,7 @@
     "pages/order_search/order_search"
   ],
   "window": {
+    "titleBarColor":"#3FA0FF",
     "defaultTitle": "华东宁波订单系统"
   },
   "tabBar": {
