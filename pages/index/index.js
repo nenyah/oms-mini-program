@@ -10,12 +10,10 @@ Page({
       '/images/banner3.jpg' 
     ],
     cates:[
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'},
-      {title:'种类1', entitle: '种类1', icon:'/images/category.png'}
+      {cid:0, title:'药品', entitle: '药品', icon:'/images/category.png'},
+      {cid:1, title:'医疗器械', entitle: '医疗器械', icon:'/images/category.png'},
+      {cid:2, title:'化妆品', entitle: '化妆品', icon:'/images/category.png'},
+      {cid:3, title:'食品及其他', entitle: '食品及其他', icon:'/images/category.png'},
     ],
     brands:[
       {title:'品牌1', entitle: '品牌1', icon:'/images/category.png'},
@@ -63,4 +61,7 @@ Page({
     console.log(event);
     dd.navigateTo({url:'/pages/product_search/product_search'})
   },
+  onItemTap(event){
+    console.log(event)
+  }
 });

@@ -1,0 +1,3 @@
+<view>{{counter}}</view>
+<view>extra: {{extra}}</view>
+<button onTap="plusOne">+1</button>

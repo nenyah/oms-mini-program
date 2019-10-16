@@ -9,7 +9,7 @@
 
 <!-- 种类 -->
 <view class="grid" key="grid">
-    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="onItemTap" data-index="{{item.cid}}">
         <view class="grid-item-wrapper">
             <image src="{{item.icon}}" class="grid-icon" mode="aspectFit" />
             <text class="grid-text">{{item.title}}</text>

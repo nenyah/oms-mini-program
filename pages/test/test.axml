@@ -3,3 +3,4 @@
     <view class="item item2">2</view>
     <view class="item item3">3</view>
 </view>
+<s-test extra="external extra" onCounterPlusOne="onCounterPlusOne"/>

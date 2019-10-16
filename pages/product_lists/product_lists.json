@@ -4,5 +4,8 @@
   },
   "titlePenetrate": "YES",
   "barButtonTheme": "light",
-  "defaultTitle": "产品列表"
+  "defaultTitle": "产品列表",
+  "usingComponents":{
+    "s-search-from":"/components/s-search-form/s-search-form"
+  }
 }

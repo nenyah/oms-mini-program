@@ -5,33 +5,6 @@ page {
 }
 
 
-/* 搜索框 */
-.section {
-  display: flex;
-  flex-direction:row;
-  width: 100vw;
-  margin: 4rpx 0;
-}
-
-.section input {
-  width: 75vw;
-  border: 4rpx solid #eee;
-  border-radius: 8rpx;
-  font-size: 24rpx;
-  text-align: center;
-}
-
-/* 下拉选择 */
-.selected_option {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-left: 10rpx;
-  width: 25vw;
-  border: 4rpx solid #eee;
-  text-align: center;
-  padding: auto 0;
-}
 
 /* 导航栏 */
 .movie-container{

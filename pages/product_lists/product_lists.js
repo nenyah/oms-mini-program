@@ -26,7 +26,7 @@ Page({
 
   },
 
-  onLoad: function () {
+  onLoad: function() {
     dd.getSystemInfo({
       success: (res) => {
         let ww = res.windowWidth;
@@ -45,7 +45,7 @@ Page({
     })
   },
 
-  onImageLoad: function (e) {
+  onImageLoad: function(e) {
     let imageId = e.currentTarget.id;
     let oImgW = e.detail.width;         //图片原始宽度
     let oImgH = e.detail.height;        //图片原始高度
@@ -91,7 +91,7 @@ Page({
     this.setData(data);
   },
 
-  loadImages: function () {
+  loadImages: function() {
     console.log('loadImages成功');
     let images = [
       {
@@ -161,7 +161,7 @@ Page({
   /**
    * 点击导航栏
    */
-  onNavBarTap: function (event) {
+  onNavBarTap: function(event) {
     // 获取点击的navbar的index
     let navbarTapIndex = event.currentTarget.dataset.navbarIndex
     // 设置data属性中的navbarActiveIndex为当前点击的navbar
@@ -173,10 +173,19 @@ Page({
   /**
    * 
    */
-  onBindAnimationFinish: function ({ detail }) {
+  onBindAnimationFinish: function({ detail }) {
     // 设置data属性中的navbarActiveIndex为当前点击的navbar
     this.setData({
       navbarActiveIndex: detail.current
+    })
+  },
+  goToDetail: function(event) {
+    // dd.navigateTo()
+    console.log(event)
+    const goodId = event.currentTarget.dataset.goodId
+    console.log(goodId)
+    dd.navigateTo({
+      url:"/pages/product_detail/product_detail"
     })
   }
 });

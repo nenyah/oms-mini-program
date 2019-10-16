@@ -5,7 +5,7 @@
       placeholder="搜索商品名称，商品编码"
       style="width:80%;"
     />
-    <navigator open-type="switchTab" url="../cart/cart">
+    <navigator open-type="navigate" url="../cart/cart">
       <view class="carts-icon {{scaleCart?'on':''}}">
           <image mode="aspectFit" src="/images/cart.png" style="width:30rpx;height:30rpx;padding:2%;margin:0 auto;"/>
           <text class="carts-icon-num" a:if="{{hasCarts}}">{{totalNum}}</text>

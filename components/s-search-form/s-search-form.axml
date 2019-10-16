@@ -1,0 +1,13 @@
+<!-- 搜索框 -->
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="section">
+    <input name="input" placeholder="搜索商品名称，商品编码" />
+    <view class="selected_option">
+    <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+    </view>
+  </view>
+</form>
