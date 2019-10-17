@@ -63,5 +63,8 @@ Page({
   },
   onItemTap(event){
     console.log(event)
-  }
+    dd.navigateTo({
+      url:"/pages/product_lists/product_lists"
+    })
+  },
 });

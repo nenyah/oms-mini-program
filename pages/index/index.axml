@@ -19,7 +19,7 @@
 
 <!-- 品牌 -->
 <view class="grid" key="grid">
-    <view a:for="{{brands}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+    <view a:for="{{brands}}" key="{{item.entitle}}" class="grid-item" onTap="onItemTap" data-index="{{index}}">
         <view class="grid-item-wrapper">
             <text class="grid-text">{{item.title}}</text>
         </view>

@@ -4,7 +4,7 @@
 <!-- 种类 -->
 <view class="header">商品分类：</view>
 <view class="grid" key="grid">
-    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="onItemTap" data-index="{{index}}">
         <view class="grid-item-wrapper">
             <text class="grid-text">{{item.title}}</text>
         </view>
@@ -14,7 +14,7 @@
 <!-- 品牌 -->
 <view class="header">商品品牌：</view>
 <view class="grid" key="grid">
-    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="{{onItemTap}}" data-index="{{index}}">
+    <view a:for="{{cates}}" key="{{item.entitle}}" class="grid-item" onTap="onItemTap" data-index="{{index}}">
         <view class="grid-item-wrapper">
             <text class="grid-text">{{item.title}}</text>
         </view>
