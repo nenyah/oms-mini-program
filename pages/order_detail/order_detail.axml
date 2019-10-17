@@ -1,9 +1,8 @@
 <view style='height:100vh'>
   <scroll-view scroll-y>
-    <view class="main_info"></view>
-    <view class="detail_info"></view>
 
-    <!-- <view
+
+    <view
       class='title'
       style='border-top:1px solid #dedede;'
       onTap="choose_order_cate"
@@ -53,13 +52,13 @@
     <view
       class='title'
       style='border-top:1px solid #dedede;'
-      onTap="choose_ship_date"
-      data-date='ship_date'
+      onTap="choose_date"
+      data-date-cate='deliver_date'
     >
       <view class='left'>
         交货日期
       </view>
-      <text>{{ship_date}}</text>
+      <text>{{deliver_date}}</text>
       <view class='right'>
         <image src='/images/my_order.png'></image>
       </view>
@@ -80,8 +79,8 @@
     <view
       class='title'
       style='border-top:1px solid #dedede;'
-      onTap="choose_pay_date"
-      data-date='pay_date'
+      onTap="choose_date"
+      data-date-cate='pay_date'
     >
       <view class='left'>
         付款日期
@@ -212,7 +211,7 @@
           </view>
         </navigator>
       </view>
-    </view> -->
+    </view>
 
   </scroll-view>
   <navigator class='btn'>
