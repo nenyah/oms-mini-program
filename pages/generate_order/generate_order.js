@@ -5,7 +5,7 @@
  * @LastEditors: Steven
  * @LastEditTime: 2019-10-08 15:40:09
  */
-import utils from '../../utils/utils.js'
+import utils from '/utils/utils.js'
 
 Page({
   data: {
@@ -33,7 +33,7 @@ Page({
     items: ['标准订单', '调货发货订单', '退货订单', '调货退货订单', '红票折让'],
     order_cate: '',
     client: '请选择客户',
-    ship_date: '',
+    deliver_date: '',
     pay_date: '',
   },
   onLoad() { },
@@ -48,32 +48,21 @@ Page({
       },
     })
   },
-  choose_ship_date(e) {
-    // console.log(e)
-    var today = new Date()
-    today = utils.formatDate(today, '-')
+
+  _setDate(date_cate) {
+    let today = utils.formatDate(new Date(),'-')
     dd.datePicker({
       format: 'yyyy-MM-dd',
       currentDate: today,
-      success: (res, ) => {
+      success: (res) => {
         this.setData({
-          ship_date: res.date,
+          [date_cate]:res.date,
         })
       },
     })
   },
-  choose_pay_date(e) {
-    // console.log(e)
-    var today = new Date()
-    today = utils.formatDate(today, '-')
-    dd.datePicker({
-      format: 'yyyy-MM-dd',
-      currentDate: today,
-      success: (res, ) => {
-        this.setData({
-          pay_date: res.date,
-        })
-      },
-    })
+  choose_date(event){
+    let date_cate = event.currentTarget.dataset.dateCate
+    this._setDate(date_cate)
   },
 });

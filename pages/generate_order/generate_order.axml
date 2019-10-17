@@ -82,13 +82,13 @@
     <view
       class='title'
       style='border-top:1px solid #dedede;'
-      onTap="choose_ship_date"
-      data-date='ship_date'
+      onTap="choose_date"
+      data-date-cate='deliver_date'
     >
       <view class='left'>
         交货日期
       </view>
-      <text>{{ship_date}}</text>
+      <text>{{deliver_date}}</text>
       <view class='right'>
         <image src='/images/my_order.png'></image>
       </view>
@@ -109,8 +109,8 @@
     <view
       class='title'
       style='border-top:1px solid #dedede;'
-      onTap="choose_pay_date"
-      data-date='pay_date'
+      onTap="choose_date"
+      data-date-cate='pay_date'
     >
       <view class='left'>
         付款日期
@@ -216,7 +216,7 @@
 
 
   </scroll-view>
-  <navigator class='btn'>
+  <navigator class='btn' url="/pages/order_detail/order_detail">
     生成订单
   </navigator>
 </view>
